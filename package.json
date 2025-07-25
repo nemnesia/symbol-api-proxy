@@ -1,0 +1,36 @@
+{
+  "name": "symbol-api-proxy",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "proxy-server.js",
+  "scripts": {
+    "start": "node proxy-server.js",
+    "build": "tsc",
+    "health-check": "node health-checker.js",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "express": "^5.1.0",
+    "ioredis": "^5.6.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/ioredis": "^5.0.0",
+    "@types/node": "^24.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "yarn": ">=4.0.0"
+  }
+}
